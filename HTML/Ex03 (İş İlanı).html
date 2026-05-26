@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İş Başvuru Ekranı</title>
+    <style>
+        body {
+            background-color: rgb(61, 184, 255);
+        }
+
+        .div1 {
+            background-color: antiquewhite;
+            width: 500px;
+            height: 480px;
+            border-radius: 5%;
+            margin-left: 400px;
+            margin-top: 30px;
+        }
+
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+
+       
+        .menu-toggle {
+            background-color: #795b6d;
+            color: white;
+            padding: 2px 57px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            width: 198px;
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+      
+        .menu-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-list li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-list li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+
+        .menu-list li:hover {
+            background-color: #e0e0e0;
+        }
+
+        
+        .menu-container:hover .menu-list {
+            display: block;
+        }
+        input{
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="div1">
+        <h2 style="margin-left: 20px; padding-top: 10px; font-size: 30px;">Job Application</h2>
+
+        <span style="padding-left: 20px;">
+            First Name
+        </span>
+
+        <span style="padding-left: 170px;  "> Last Name
+
+        </span>
+        <input type="text" name="" id="" style=" left: 428px; width: 200px;
+        position: absolute; top: 125px;" placeholder="Name">
+
+        <input type="text" name="" id="" style="margin-left: 45px; position: absolute; width: 200px;
+        top: 125px; left: 628px;" placeholder="Surname">
+
+        <span style="position: absolute; top: 180px; left: 428px;">Email</span>
+        <span style="position: absolute; top: 180px; left: 675px;">Job Role</span>
+
+        <input type="email" name="" id="" style=" left: 428px; width: 200px;
+        position: absolute; top: 200px;" placeholder="Email">
+
+        <div class="menu-container" style="position: absolute; top: 200px; left: 675px;">
+            <button class="menu-toggle">Choose Job</button>
+            <ul class="menu-list">
+                <li><a href="#">Frontend</a></li>
+                <li><a href="#">Backend</a></li>
+                <li><a href="#">Full Stack</a></li>
+                <li><a href="#">UI Designer</a></li>
+            </ul>
+        </div>
+
+        <span style="position: absolute; top: 260px; left: 428px; display: block;">Adress</span>
+        <textarea name="" id="" style="position: absolute; top: 280px; left: 428px; display: block; width: 450px;
+        height: 80px;" placeholder="Enter Adress"></textarea>
+
+        <span style="position: absolute; top: 380px; left: 428px; display: block;"> City</span>
+        <span style="position: absolute; top: 380px; left: 675px;">PIN Code</span>
+
+        <input type="text" name="" id="" style="margin-left: 45px; position: absolute; width: 200px;
+        top: 400px; left: 628px;" placeholder="PIN">
+
+        <input type="email" name="" id="" style=" left: 428px; width: 200px;
+        position: absolute; top: 400px;" placeholder="City">
+
+        <span style="position: absolute; top: 450px; left: 428px; display: block;"> Start Date</span>
+        <span style="position: absolute; top: 450px; left: 675px;">Upluod CV</span>
+
+        <input type="date" name="" id="" style=" left: 428px; width: 200px;
+        position: absolute; top: 470px;">
+
+        <input type="file" name="" id="" style="margin-left: 45px; position: absolute; width: 200px;
+        top: 470px; left: 628px;">
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
